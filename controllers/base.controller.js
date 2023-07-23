@@ -8,10 +8,10 @@ export const sendToTelegram = async (req, res) => {
 
   const messageFromSite = `
   <b>Кому то Вы нужны:</b>
-  ${name}
-  ${email}
-  ${phone}
-  ${message}
+  Имя: ${name}
+  Почта: ${email}
+  Телефон: ${phone}
+  Сообщение: ${message}
   `;
   const messageOptions = { parse_mode: 'HTML' };
 
